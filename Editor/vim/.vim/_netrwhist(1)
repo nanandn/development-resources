@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/anarasimhan/Development/git/repositories/node/archive-material-css/node_modules/bh-react-listselector/styles/bh-ui-styles'
+let g:netrw_dirhist_2='/Users/anarasimhan/Development/git/repositories/node/archive-material-css/node_modules/bh-react-player/node_modules/bh-ui-styles'
+let g:netrw_dirhist_3='/Users/anarasimhan/Development/git/repositories/node/mobile/contenthub-mobile/android/build'

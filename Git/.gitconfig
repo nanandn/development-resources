@@ -1,0 +1,41 @@
+[core]
+    autocrlf = input
+	ignorecase = false
+[user]
+	name = Anand Narasimhan
+	email = anarasimhan@netflix.com
+[alias]
+    co = checkout
+    st = status
+    com = commit
+    pushn = push --dry-run
+    ucdiff = diff --unified=15 --color
+    ucwdiff = diff --unified=15 --color --word-diff=color
+    lg =     log --pretty=format:'%Cred%h%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset'
+    lg2 =    log --pretty=format:'%Cred%h%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset %n%w(,5,5)%B'
+    graph =  log --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset'
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[merge]
+	tool = p4mergetool
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[commit]
+	template = /Users/anarasimhan/.stCommitMsg
