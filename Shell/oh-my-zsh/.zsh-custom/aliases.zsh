@@ -32,17 +32,6 @@ alias showhiddenfiles="defaults write com.apple.finder AppleShowAllFiles -boolea
 alias hidehiddenfiles="defaults delete com.apple.finder AppleShowAllFiles; killall Finder"
 alias adbreverse="adb reverse tcp:8081 tcp:8081"
 alias killdns="sudo killall -TERM mDNSResponder"
-alias nmgulp="node_modules/gulp/bin/gulp.js"
-
-# NPM
-alias runprana="gradlew runPrana"
-alias start="yarn start"
-alias build="yarn run build"
-alias watch="yarn run watch"
-alias clean="yarn run clean"
-alias dev-server="yarn run dev-server"
-alias start-dev-server="yarn run start:dev-server"
-
 
 # Port forwarding
 alias showpfw="sudo pfctl -s nat"
