@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
+export ZSH_DISABLE_COMPFIX=true
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,7 +52,9 @@ ZSH_CUSTOM=~/.zsh-custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git 
-  nvm zsh-better-npm-completion
+  node
+  nvm
+  zsh-better-npm-completion
 )
 
 # User configuration
